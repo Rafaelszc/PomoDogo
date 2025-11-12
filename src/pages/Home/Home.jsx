@@ -13,6 +13,7 @@ export const Home = () => {
     const [isRuning, setIsRuning] = useState(false)
     const [startBark] = useSound("/sounds/start-bark.ogg")   
     const [pomodogoSeries, setPomodogoSeries] = useState(4)
+    const [mode, setMode] = useState("dark")
 
     const buttonsProps = {
         minutesWork,
@@ -26,7 +27,8 @@ export const Home = () => {
         isRuning,
         setIsRuning,
         startBark,
-        setReset
+        setReset,
+        mode
     }
 
     const timerProps = {
@@ -35,11 +37,11 @@ export const Home = () => {
     }
 
     return (
-        <main className="bg-black h-screen flex flex-col">
-            <Header />
+        <main className={`bg-${mode === "dark" ? "black" : "white"} transition duration-300 h-screen flex flex-col`}>
+            <Header mode={mode} setMode={setMode} />
             <div className="h-full flex flex-col items-center justify-center">
                 <Timer {...timerProps} />
-                <Dog />
+                <Dog mode={mode} />
                 <Buttons {...buttonsProps} />
             </div>
         </main>
