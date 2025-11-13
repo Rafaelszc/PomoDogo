@@ -43,7 +43,7 @@ export const Timer = ({
                         return prevTime -1
                     }
                 })
-            }, 0.1)
+            }, 1000)
             return () => clearInterval(interval)
         }
     }, [isRuning, reset, isBreakTime, currentSerie, pomodogoSeries])
