@@ -8,7 +8,7 @@ export const Timer = ({
         setPomodogoSeries, isRuning, 
         setIsRuning, currentSerie, 
         startBark, setReset, 
-        mode, reset}) => {
+        theme, reset}) => {
     const [workTime, setWorkTime] = useState(minutesWork*60)
     const [isBreakTime, setIsBreakTime] = useState(false)
     const [gogoBark] = useSound("/sounds/gogogo-bark.ogg")
@@ -53,7 +53,7 @@ export const Timer = ({
     const secondsRemaining = (workTime%60).toString().padStart(2, "0")
 
     return (
-        <div className={`flex flex-col items-center justify-center gap-4 transition duration-300 text-${mode === "dark" ? "white" : "black"}`}>
+        <div className={`flex flex-col items-center justify-center gap-4 transition duration-300 text-${theme === "dark" ? "white" : "black"}`}>
             <div>
                 <li className="list-none flex gap-1">
                     {[...Array(currentSerie)].map((e, i) => (<ul className="bg-yellow-200 h-5 w-5 rounded-full" />))}

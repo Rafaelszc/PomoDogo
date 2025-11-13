@@ -1,4 +1,4 @@
-export const Dog = ( { mode } ) => {
+export const Dog = ( { theme } ) => {
     return (
         <video
         typeof="video/mp4" 
@@ -6,6 +6,6 @@ export const Dog = ( { mode } ) => {
         autoPlay 
         muted 
         src="/video/dogo-studying.mp4"
-        className={`h-96 transition duration-300 invert${mode === "dark" ? "-0" : ""}`}/>
+        className={`h-96 transition duration-300 invert${theme === "dark" ? "-0" : ""}`}/>
     )
 }
