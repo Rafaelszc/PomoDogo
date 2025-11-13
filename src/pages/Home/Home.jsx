@@ -37,7 +37,7 @@ export const Home = () => {
     }
 
     return (
-        <main className={`bg-${theme === "dark" ? "black" : "white"} transition duration-300 h-screen flex flex-col`}>
+        <main className={`${theme === "dark" ? "bg-black" : "bg-white"} transition duration-300 h-screen flex flex-col`}>
             <Header theme={theme} setTheme={setTheme} />
             <div className="h-full flex flex-col items-center justify-center">
                 <Timer {...timerProps} />

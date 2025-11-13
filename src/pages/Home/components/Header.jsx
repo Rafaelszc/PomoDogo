@@ -12,7 +12,7 @@ export const Header = ({ theme, setTheme }) => {
     }
 
     return (
-        <header className={`h-16 pr-10 pl-10 flex items-center justify-between select-none transition duration-300 bg-${theme === "dark" ? "black" : "white"}`}>
+        <header className={`h-16 pr-10 pl-10 flex items-center justify-between select-none transition duration-300 ${theme === "dark" ? "bg-black" : "bg-white"}`}>
             <span className={`text-${theme === "dark" ? "white" : "black"} transition duration-500 text-2xl font-bold`}>
                 Pomodogo
             </span>
