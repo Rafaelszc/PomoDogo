@@ -36,9 +36,9 @@
 ## Technologies Used
 
 <div align="center">
-  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="public/images/langs/javascript.webp" style="height: 60px" alt="javascript"></img></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="docs/javascript.webp" style="height: 60px" alt="javascript"></img></a>
   <a href="https://vite.dev/" target="blank"><img style="height: 60px" src="docs/vite.png" alt="vite"></a>
-  <a href="https://react.dev/" target="_blank"><img src="public/images/langs/react.webp" style="height: 60px" alt="react"></img></a>
+  <a href="https://react.dev/" target="_blank"><img src="docs/react.webp" style="height: 60px" alt="react"></img></a>
   <a href="https://tailwindcss.com/" target="_blank"><img style="height: 60px" src="docs/tailwind.png" alt="tailwind_css"></a>
 </div>
 
