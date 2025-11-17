@@ -16,9 +16,14 @@ export const Header = ({ theme, setTheme }) => {
             <span className={`text-${theme === "dark" ? "white" : "black"} transition duration-500 text-2xl font-bold`}>
                 Pomodogo
             </span>
-            <button className={`transition duration-300 opacity-${iconOpacity} text-white`} onClick={handleSwitchTheme}>
-                <img className="h-6" src={theme === "dark" ? "/images/dark-mode.png" : "/images/light-mode.png"} alt="" />
-            </button>
+            <div className="flex gap-6">
+                <button className={`transition duration-300 opacity-${iconOpacity} text-white`} onClick={handleSwitchTheme}>
+                    <img className="h-6" src={theme === "dark" ? "/images/dark-mode.png" : "/images/light-mode.png"} alt="" />
+                </button>
+                <a href="https://github.com/Rafaelszc" target="_blank">
+                    <img src={`${theme === "dark" ? "/images/github-mark-white.png" : "/images/github-mark.png"}`} className={`h-6 opacity-${iconOpacity}`} alt="" />
+                </a>
+            </div>
         </header>
     )
 }
